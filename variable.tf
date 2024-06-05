@@ -35,3 +35,8 @@ variable "ingress_rules"{
     type = list
     default = []
 }
+
+variable "sg_tags" {
+    type = string
+    default = "s"
+}

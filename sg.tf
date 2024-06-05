@@ -29,6 +29,7 @@ resource "aws_security_group" "allow_tls" {
 
   tags = merge (
     var.common_tags,
+    var.sg_tags,
     {
         name = "${var.project_name}-${var.Environment}"
     }
