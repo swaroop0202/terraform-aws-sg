@@ -21,7 +21,7 @@ variable "common_tags" {
 }
 
 variable "outbound_rules"{
-    type = list
+    type = map
     default = {
         from_port = "0"
         to_port = "0"

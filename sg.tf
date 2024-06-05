@@ -28,8 +28,8 @@ resource "aws_security_group" "allow_tls" {
 
 
   tags =merge(
+    var.common_tags,
     {
-        var.common_tags,
         Project = "Expense"
         Environment = "Dev"
         Terraform = "True"
